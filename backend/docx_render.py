@@ -228,7 +228,7 @@ def render_artifact(
     # ---- Cover / header ----
     _add_heading(doc, f"Artifact {artifact['number']:02d}", level=2)
     _add_heading(doc, artifact["title"], level=0)
-    _add_paragraph(doc, "FinOps AI Principal Consultant — Reference Manual Template",
+    _add_paragraph(doc, "AI Cost Architect — Principal Consultant — Reference Manual Template",
                    italic=True, color=COLOR_MUTED, size=11)
     if project_name:
         _add_paragraph(doc, f"Project: {project_name}    Domain overlay: {domain}",
@@ -253,7 +253,7 @@ def render_artifact(
     if learning.get("concepts"):
         _add_heading(doc, "Key concepts (glossary)", level=1)
         _add_paragraph(doc,
-            "If you have never done AI FinOps before, read this section carefully. "
+            "If you have never done AI cost management before, read this section carefully. "
             "Each concept is used elsewhere in this artifact and across the pack.",
             italic=True, color=COLOR_MUTED)
         for c in learning["concepts"]:
@@ -307,7 +307,7 @@ def render_artifact(
     if artifact.get("fields"):
         _add_heading(doc, "Fillable form", level=1)
         _add_paragraph(doc,
-            "Complete the fields below. When rendered from the FinOps AI Portfolio "
+            "Complete the fields below. When rendered from the AI Cost Architect Portfolio "
             "application, these values are populated automatically from the project record.",
             italic=True, color=COLOR_MUTED)
         _add_field_form(doc, artifact["fields"], values=field_values)

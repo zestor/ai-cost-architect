@@ -66,7 +66,7 @@ export default function Dashboard() {
       <TopBar>
         <div>
           <div className="text-sm font-semibold text-ink">Portfolio dashboard</div>
-          <div className="text-xs text-muted">AI FinOps at a glance</div>
+          <div className="text-xs text-muted">AI cost management at a glance</div>
         </div>
         <div className="flex items-center gap-2">
           <a href={api.blankAllUrl()} className="btn" data-testid="button-download-blank-pack">

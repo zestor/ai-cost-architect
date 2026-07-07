@@ -104,7 +104,7 @@ export default function ArtifactReference() {
                 <BookOpen size={22} className="text-accent" />
                 <div className="text-base font-semibold text-ink mt-2">Choose an artifact to open its reference</div>
                 <div className="text-sm text-muted mt-1">
-                  Each entry is written as a mini reference-manual for someone with no prior FinOps or AI background:
+                  Each entry is written as a mini reference-manual for someone with no prior AI cost management or AI background:
                   key concepts, step-by-step how-to, a fully worked example, common pitfalls, decision tree, and eight
                   domain overlays (banking, retail, energy, aerospace, public sector, telecom, entertainment, generic).
                 </div>

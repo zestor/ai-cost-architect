@@ -24,7 +24,7 @@
         <span class="brand-mark">A</span>
         <span>
           <span class="brand-name">AI Cost Architect</span><br>
-          <span class="brand-sub">FinOps for enterprise AI</span>
+          <span class="brand-sub">Cost architecture for enterprise AI</span>
         </span>
       </a>
       <div class="nav-group">

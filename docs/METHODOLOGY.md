@@ -1,6 +1,6 @@
 # AI Cost Architect — End-to-End Methodology
 
-**Audience:** Principal AI Solutions Consultant leading enterprise AI FinOps engagements.
+**Audience:** Principal AI Solutions Consultant leading enterprise AI cost management engagements.
 **Scope:** How to run an engagement from first stakeholder conversation to steady-state operate.
 **Deliverable framework:** The 21 reference artifacts in [`../templates/`](../templates/), managed by the portfolio app in [`../backend/`](../backend/) + [`../frontend/`](../frontend/).
 
@@ -78,7 +78,7 @@ Phases 3 and 4 overlap. So do 5 and 6. Do not treat them as strict waterfall.
 
 ## 4. Phase 0 — Portfolio Intake
 
-**Purpose:** Decide whether this use case belongs in the FinOps portfolio at all, and at what tier.
+**Purpose:** Decide whether this use case belongs in the AI cost management portfolio at all, and at what tier.
 
 **When to use:** Every new AI initiative surfaces here before you spend a day on it.
 
@@ -447,7 +447,7 @@ For each optimization, record:
 **Purpose:** Sustainable governance. The consultant leaves; the framework stays.
 
 **Primary artifacts:**
-- [Artifact 17 — FinOps Operating Model (RACI + Cadence)](../templates/Artifact_17_Operating_Model.docx)
+- [Artifact 17 — Cost Management Operating Model (RACI + Cadence)](../templates/Artifact_17_Operating_Model.docx)
 - [Artifact 18 — Chargeback / Showback Allocation](../templates/Artifact_18_Chargeback_-_Showback.docx)
 - [Artifact 19 — Vendor & Pricing Negotiation Tracker](../templates/Artifact_19_Vendor_Tracker.docx)
 - [Artifact 20 — Data Dictionary](../templates/Artifact_20_Data_Dictionary.docx)
@@ -563,7 +563,7 @@ Once the operating model is live (from [Artifact 17](../templates/Artifact_17_Op
 | Daily     | Platform on-call                       | Cost-anomaly dashboard review; run Artifact 21 if > 20% deviation             | [Artifact 21](../templates/Artifact_21_Anomaly_Playbook.docx) |
 | Weekly    | Product + Finance                      | Unit-economics review; adoption trends; guardrail-trigger and reject rates    | [Artifact 7](../templates/Artifact_07_Unit_Economics.docx), [Artifact 16](../templates/Artifact_16_Evaluation_&_Quality.docx) |
 | Monthly   | Finance (lead) + Product + Technical   | Close, reconcile Artifact 8 vs. invoice, publish variance memo                 | [Artifact 6](../templates/Artifact_06_Pilot_Measurement_Plan.docx), [Artifact 8](../templates/Artifact_08_Cost_Forecast.docx), [Artifact 18](../templates/Artifact_18_Chargeback_-_Showback.docx) |
-| Quarterly | LOB leadership + FinOps triad          | Portfolio review; refresh optimization catalog; renegotiation checkpoints     | [Artifact 10](../templates/Artifact_10_Optimization_Catalog.docx), [Artifact 19](../templates/Artifact_19_Vendor_Tracker.docx) |
+| Quarterly | LOB leadership + cost management triad          | Portfolio review; refresh optimization catalog; renegotiation checkpoints     | [Artifact 10](../templates/Artifact_10_Optimization_Catalog.docx), [Artifact 19](../templates/Artifact_19_Vendor_Tracker.docx) |
 | Annual    | Executive committee                    | Framework refresh; assumption re-baseline; portfolio prioritization           | Full pack, especially [Artifact 3](../templates/Artifact_03_Boundary_&_Pricing.docx), [Artifact 12](../templates/Artifact_12_ROI_-_NPV.docx), [Artifact 17](../templates/Artifact_17_Operating_Model.docx) |
 
 ---
@@ -590,7 +590,7 @@ Full list with phase, purpose, and link. The app's Artifact Reference view is th
 | 14  | 6 | [Full Business Case Narrative](../templates/Artifact_14_Business_Case_Narrative.docx) | Business + Consultant | Auditable narrative for governance and internal audit. |
 | 15  | 1–6 (running) | [Risk Register & Controls Checklist](../templates/Artifact_15_Risk_&_Controls.docx) | Risk/Compliance | Operational, model, third-party, compliance, and data risks with controls. |
 | 16  | 6 (running) | [Evaluation & Quality Gate](../templates/Artifact_16_Evaluation_&_Quality.docx) | Product + Risk | Quality gates that drive retry rates, output length, escalations — and therefore cost. |
-| 17  | 7 | [FinOps Operating Model (RACI + Cadence)](../templates/Artifact_17_Operating_Model.docx) | Business + Finance | Sustainable cost management after the consultant phase. |
+| 17  | 7 | [Cost Management Operating Model (RACI + Cadence)](../templates/Artifact_17_Operating_Model.docx) | Business + Finance | Sustainable cost management after the consultant phase. |
 | 18  | 7 | [Chargeback / Showback Allocation](../templates/Artifact_18_Chargeback_-_Showback.docx) | Finance | Allocate AI spend to cost centers in a way that aligns incentives. |
 | 19  | 7 | [Vendor & Pricing Negotiation Tracker](../templates/Artifact_19_Vendor_Tracker.docx) | Finance + Procurement | Track vendor pricing, terms, and negotiation status over time. |
 | 20  | 7 | [Data Dictionary](../templates/Artifact_20_Data_Dictionary.docx) | Technical | Audit-ready dictionary of every field used across the pack. |

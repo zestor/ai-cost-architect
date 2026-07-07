@@ -10,7 +10,7 @@
 │  - ProjectDetail     │        │  - Portfolio summary          │
 │  - ArtifactEditor    │        │  - Blank template pack        │
 │  - TemplateLibrary   │        │                               │
-│  - ArtifactReference │        │  SQLite (finops.db)           │
+│  - ArtifactReference │        │  SQLite (aicost.db)           │
 └──────────────────────┘        │  Auto-seeded on empty DB      │
                                 └───────────────────────────────┘
                                             │

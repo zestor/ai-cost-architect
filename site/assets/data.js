@@ -137,7 +137,7 @@ window.ACA.artifacts = [
   },
   { id: "A17", num: 17, slug: "operating-model",            phase: 7, owner: "Business + Finance",
     file: "Artifact_17_Operating_Model.docx",
-    title: "FinOps Operating Model (RACI + Cadence)",
+    title: "Cost Management Operating Model (RACI + Cadence)",
     purpose: "Make cost management sustainable and repeatable after the consultant phase. Names owners for daily/weekly/monthly/quarterly cadences.",
     when: "Phase 6 draft, Phase 7 go-live. Names owned before consultant leaves.",
     tiers: { T1: "required", T2: "required", T3: "optional" }

@@ -1,4 +1,4 @@
-"""FastAPI backend for the FinOps AI Portfolio Manager.
+"""FastAPI backend for the AI Cost Architect Portfolio Manager.
 
 Endpoints
 ---------
@@ -44,7 +44,7 @@ from docx_render import render_artifact
 # Database
 # ---------------------------------------------------------------------------
 
-DB_PATH = os.environ.get("FINOPS_DB_PATH", "/home/user/workspace/finops_ai/app/backend/finops.db")
+DB_PATH = os.environ.get("ACA_DB_PATH", "/home/user/workspace/ai_cost_architect/app/backend/aicost.db")
 
 
 def _init_db() -> None:
@@ -121,7 +121,7 @@ class EntryIn(BaseModel):
 # App
 # ---------------------------------------------------------------------------
 
-app = FastAPI(title="FinOps AI Portfolio Manager")
+app = FastAPI(title="AI Cost Architect Portfolio Manager")
 
 app.add_middleware(
     CORSMiddleware,
@@ -362,7 +362,7 @@ def export_all(pid: int):
     return Response(
         content=buf.getvalue(),
         media_type="application/zip",
-        headers={"Content-Disposition": f'attachment; filename="{safe}_FinOps_Pack.zip"'},
+        headers={"Content-Disposition": f'attachment; filename="{safe}_AI_Cost_Pack.zip"'},
     )
 
 
@@ -393,7 +393,7 @@ def blank_all():
     return Response(
         content=buf.getvalue(),
         media_type="application/zip",
-        headers={"Content-Disposition": 'attachment; filename="FinOps_AI_Template_Pack.zip"'},
+        headers={"Content-Disposition": 'attachment; filename="AI_Cost_Architect_Template_Pack.zip"'},
     )
 
 

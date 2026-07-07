@@ -12,12 +12,12 @@ import ArtifactReference from './pages/ArtifactReference.jsx';
 function Logo() {
   return (
     <div className="flex items-center gap-2">
-      <svg viewBox="0 0 32 32" width="26" height="26" aria-label="FinOps AI logo">
+      <svg viewBox="0 0 32 32" width="26" height="26" aria-label="AI Cost Architect logo">
         <rect x="2" y="2" width="28" height="28" rx="6" fill="#01696F" />
         <path d="M9 22 L14 12 L18 18 L23 10" stroke="white" strokeWidth="2.4" fill="none" strokeLinecap="round" strokeLinejoin="round" />
       </svg>
       <div className="leading-tight">
-        <div className="text-[13px] font-semibold text-ink">FinOps AI</div>
+        <div className="text-[13px] font-semibold text-ink">AI Cost Architect</div>
         <div className="text-[11px] text-muted -mt-0.5">Portfolio Manager</div>
       </div>
     </div>
@@ -60,7 +60,7 @@ function Sidebar() {
       </nav>
       <div className="p-3 border-t border-border">
         <div className="text-[11px] text-muted leading-relaxed">
-          FinOps AI framework
+          AI Cost Architect framework
           <br />
           21 reference artifacts · exportable to DOCX
         </div>
