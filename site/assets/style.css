@@ -371,15 +371,33 @@ a.download:hover { border-color: var(--primary); color: var(--primary); }
 .btn-primary:hover { background: var(--primary-hover); }
 
 .pager {
-  display: flex; justify-content: space-between; gap: 16px;
-  margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
-  flex-wrap: wrap;
+  display: flex; justify-content: space-between; align-items: center;
+  gap: 24px; margin-top: 48px; padding-top: 24px;
+  border-top: 1px solid var(--border);
 }
+.pager-prev, .pager-next { flex: 1 1 0; min-width: 0; }
+.pager-prev { text-align: left; }
+.pager-next { text-align: right; }
 .pager-link {
-  color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500;
+  display: inline-block; color: var(--primary); text-decoration: none;
+  font-size: 14px; font-weight: 500; line-height: 1.4;
+  max-width: 100%;
 }
 .pager-link:hover { text-decoration: underline; }
-.pager .pager-link:only-child { margin-left: auto; }
+@media (max-width: 640px) {
+  .pager { flex-direction: column; align-items: stretch; gap: 12px; }
+  .pager-prev, .pager-next { text-align: left; }
+}
+
+/* Breadcrumb / home link — sits at top of every sub-page */
+.crumbs {
+  display: flex; align-items: center; gap: 8px;
+  margin: 0 0 20px; font-size: 13px; color: var(--text-muted);
+}
+.crumbs a { color: var(--text-muted); text-decoration: none; }
+.crumbs a:hover { color: var(--primary); text-decoration: underline; }
+.crumbs .sep { color: var(--text-faint, var(--text-muted)); opacity: 0.6; }
+.crumbs .home { display: inline-flex; align-items: center; gap: 5px; }
 
 /* Failure modes list */
 .failures { display: flex; flex-direction: column; gap: 20px; margin: 24px 0; }
