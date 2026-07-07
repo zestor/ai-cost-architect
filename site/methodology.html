@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Methodology — AI Cost Architect</title>
+  <meta name="description" content="Start-to-finish methodology across 7 phases and 21 artifacts.">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="content">
+      <span class="eyebrow">Guidance</span>
+      <h1>The Methodology</h1>
+      <p class="lede">A start-to-finish playbook for the Principal AI Solutions Consultant leading enterprise AI cost management engagements. Seven phases from portfolio intake through steady-state operate.</p>
+
+      <div class="callout">
+        <div class="callout-title">Read this in order</div>
+        <p>The methodology is designed to be read sequentially the first time and referenced by phase thereafter. Full narrative, worked examples, and cross-phase dependencies are in <a href="https://github.com/zestor/ai-cost-architect/blob/main/docs/METHODOLOGY.md"><code>docs/METHODOLOGY.md</code></a> in the repository. This page is the quick-navigation summary.</p>
+      </div>
+
+      <h2>The 21 artifacts in one place</h2>
+      <p>See <a href="artifacts/index.html">All 21 Artifacts</a> for the full artifact library grouped by phase, with DOCX downloads.</p>
+
+      <h2>The seven phases</h2>
+      
+      <h2 id="phase-0"><a href="phases/intake.html">Phase 0 · Portfolio Intake</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Pre-week</p>
+      <p><strong>Purpose:</strong> Decide whether to take the project and at what tier.</p>
+      <p><strong>Exit criteria:</strong> Project accepted with tier assigned. Five named owners. Sponsor confirmed for kickoff.</p>
+
+      <h2 id="phase-1"><a href="phases/kickoff.html">Phase 1 · Engagement Kickoff</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Week 0–1</p>
+      <p><strong>Purpose:</strong> Establish a signed, shared scope with named owners.</p>
+      <p><strong>Exit criteria:</strong> Artifact 1 has zero blank fields. All five owners have signed. Decision log has ≥ 3 entries.</p>
+        <p><strong>Primary artifacts:</strong></p>
+        <ul>
+          <li><a href="artifacts/kickoff-scope.html">Artifact 01 — Engagement Kickoff &amp; Scope</a> (Product)</li>
+        </ul>
+
+      <h2 id="phase-2"><a href="phases/decomposition.html">Phase 2 · Decomposition &amp; Boundary</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Week 1–2</p>
+      <p><strong>Purpose:</strong> Turn architecture into measurable steps with a defensible cost boundary.</p>
+      <p><strong>Exit criteria:</strong> Artifacts 2, 3, 4 approved. Drivers map 1:1 to instrumentation plan.</p>
+        <p><strong>Primary artifacts:</strong></p>
+        <ul>
+          <li><a href="artifacts/workload-decomposition.html">Artifact 02 — Workload Decomposition &amp; Architecture Notes</a> (Technical)</li>
+          <li><a href="artifacts/boundary-pricing.html">Artifact 03 — Cost Boundary, Assumptions &amp; Pricing Table</a> (Finance)</li>
+          <li><a href="artifacts/cost-driver-map.html">Artifact 04 — Cost Driver Map</a> (Technical)</li>
+        </ul>
+
+      <h2 id="phase-3"><a href="phases/instrumentation.html">Phase 3 · Instrumentation &amp; Measurement</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Week 2–4</p>
+      <p><strong>Purpose:</strong> Get real per-request cost data flowing into a queryable store.</p>
+      <p><strong>Exit criteria:</strong> Instrumentation live in prod. One billing cycle reconciled within ±10%.</p>
+        <p><strong>Primary artifacts:</strong></p>
+        <ul>
+          <li><a href="artifacts/metering-instrumentation.html">Artifact 05 — Metering &amp; Instrumentation Requirements</a> (Technical)</li>
+          <li><a href="artifacts/pilot-measurement-plan.html">Artifact 06 — Pilot Measurement Plan (Sampling + Calibration)</a> (Technical + Finance)</li>
+        </ul>
+
+      <h2 id="phase-4"><a href="phases/modeling.html">Phase 4 · Modeling</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Week 3–5</p>
+      <p><strong>Purpose:</strong> Build unit economics, componentized forecast, and scenarios.</p>
+      <p><strong>Exit criteria:</strong> Cost/successful-outcome stated in one sentence. Forecast reconciles. Top 3 sensitivities identified.</p>
+        <p><strong>Primary artifacts:</strong></p>
+        <ul>
+          <li><a href="artifacts/unit-economics.html">Artifact 07 — AI Unit Economics Calculator</a> (Finance + Product)</li>
+          <li><a href="artifacts/cost-forecast.html">Artifact 08 — AI Cost Forecast Model (Monthly, by Component)</a> (Finance)</li>
+          <li><a href="artifacts/scenarios-sensitivity.html">Artifact 09 — Scenario Planning &amp; Sensitivity</a> (Finance + Product)</li>
+        </ul>
+
+      <h2 id="phase-5"><a href="phases/optimization.html">Phase 5 · Optimization &amp; Benefits</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Week 4–5</p>
+      <p><strong>Purpose:</strong> Turn cost model into an action plan and honest attributable benefits.</p>
+      <p><strong>Exit criteria:</strong> ≥ 6 quantified levers with owners. Attributable benefit signed by Business Owner.</p>
+        <p><strong>Primary artifacts:</strong></p>
+        <ul>
+          <li><a href="artifacts/optimization-catalog.html">Artifact 10 — Optimization Options Catalog</a> (Product + Technical)</li>
+          <li><a href="artifacts/benefits-calculator.html">Artifact 11 — Benefits Value Calculator (Incremental &amp; Attributable)</a> (Business + Finance)</li>
+        </ul>
+
+      <h2 id="phase-6"><a href="phases/business_case.html">Phase 6 · Business Case &amp; Governance</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Week 5–6</p>
+      <p><strong>Purpose:</strong> Deliver a decision-ready package for the executive committee.</p>
+      <p><strong>Exit criteria:</strong> Exec committee decision recorded in the Artifact 1 Decision Log.</p>
+        <p><strong>Primary artifacts:</strong></p>
+        <ul>
+          <li><a href="artifacts/roi-npv.html">Artifact 12 — ROI / NPV Model</a> (Finance)</li>
+          <li><a href="artifacts/exec-one-pager.html">Artifact 13 — Executive One-Pager (Business Case)</a> (Product + Business)</li>
+          <li><a href="artifacts/business-case-narrative.html">Artifact 14 — Full Business Case Narrative</a> (Business + Consultant)</li>
+          <li><a href="artifacts/risk-controls.html">Artifact 15 — Risk Register &amp; Controls Checklist</a> (Risk/Compliance)</li>
+          <li><a href="artifacts/evaluation-quality.html">Artifact 16 — Evaluation &amp; Quality Gate</a> (Product + Risk)</li>
+        </ul>
+
+      <h2 id="phase-7"><a href="phases/operate.html">Phase 7 · Operate &amp; Steady State</a></h2>
+      <p class="text-small text-muted"><strong>Timeline:</strong> Ongoing</p>
+      <p><strong>Purpose:</strong> Sustainable governance after the consultant leaves.</p>
+      <p><strong>Exit criteria:</strong> First monthly close on time with the new operating model. Anomaly playbook rehearsed.</p>
+        <p><strong>Primary artifacts:</strong></p>
+        <ul>
+          <li><a href="artifacts/operating-model.html">Artifact 17 — Cost Management Operating Model (RACI + Cadence)</a> (Business + Finance)</li>
+          <li><a href="artifacts/chargeback-showback.html">Artifact 18 — Chargeback / Showback Allocation</a> (Finance)</li>
+          <li><a href="artifacts/vendor-tracker.html">Artifact 19 — Vendor &amp; Pricing Negotiation Tracker</a> (Finance + Procurement)</li>
+          <li><a href="artifacts/data-dictionary.html">Artifact 20 — Data Dictionary</a> (Technical)</li>
+          <li><a href="artifacts/anomaly-playbook.html">Artifact 21 — Cost Anomaly Playbook</a> (Platform + Finance)</li>
+        </ul>
+
+
+      <h2>Governance cadence</h2>
+      <p>Once the operating model is live (from Artifact 17), the framework runs on a fixed cadence — daily anomaly checks, weekly unit-economics review, monthly close and reconciliation, quarterly portfolio review, annual framework refresh. See <a href="governance.html">Governance Cadence</a> for the full table.</p>
+
+      <h2>Failure modes</h2>
+      <p>Common ways engagements fail — and how the 21-artifact pack forces the discipline that prevents them. See <a href="failure-modes.html">Failure Modes</a>.</p>
+
+    </main>
+  </div>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

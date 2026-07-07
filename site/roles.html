@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Roles &amp; RACI — AI Cost Architect</title>
+  <meta name="description" content="The six roles and RACI patterns the framework relies on.">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="content">
+      <span class="eyebrow">Reference</span>
+      <h1>Roles &amp; RACI</h1>
+      <p class="lede">Every artifact names an owner. Every engagement names five signatories. These are the six roles the framework relies on — and what each one is accountable for.</p>
+
+      <h2>The five signatory roles</h2>
+      <p>An engagement cannot start until these five roles are named in Artifact 1. If a role is unfilled, the engagement is not ready.</p>
+
+      <table class="artifacts-table">
+        <thead><tr><th>Role</th><th>Accountability</th></tr></thead>
+        <tbody>
+        <tr><td><strong>Product Owner</strong></td><td>Owns scope, priorities, and user-experience trade-offs. Signs Artifact 1 scope and quality gates in Artifact 16.</td></tr>
+        <tr><td><strong>Business Owner</strong></td><td>Owns the business case and the attributable-benefits claim. Signs Artifact 11 baseline and Artifact 13 exec one-pager.</td></tr>
+        <tr><td><strong>Finance Lead</strong></td><td>Owns pricing table, forecast reconciliation, ROI/NPV model, and monthly close. Signs Artifacts 3, 8, 12.</td></tr>
+        <tr><td><strong>Technical Lead</strong></td><td>Owns architecture decomposition, instrumentation, and cost-driver mapping. Signs Artifacts 2, 4, 5, 20.</td></tr>
+        <tr><td><strong>Risk / Compliance Lead</strong></td><td>Owns model risk, third-party risk, and regulatory boundary. Signs Artifacts 15, 16 and MRM signoff where SR 11-7 applies.</td></tr>
+        <tr><td><strong>Principal Consultant</strong></td><td>Owns the framework itself — orchestrates the five owners, writes the narrative, drives cadence. Signs all artifacts after review.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>RACI in practice</h2>
+      <p>The <a href="artifacts/operating-model.html">Cost Management Operating Model</a> (Artifact 17) defines the full RACI matrix, meeting cadence, and escalation path. Standing responsibility patterns:</p>
+      <ul>
+        <li><strong>Cost anomalies</strong> — Platform on-call responsible; Finance and Product informed within 30 minutes.</li>
+        <li><strong>Model changes</strong> — Technical Lead responsible; Risk consulted; Product informed.</li>
+        <li><strong>Pricing renegotiation</strong> — Finance responsible; Procurement consulted; Product informed.</li>
+        <li><strong>Quality gate changes</strong> — Product responsible; Risk consulted; Technical informed.</li>
+      </ul>
+
+    </main>
+  </div>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

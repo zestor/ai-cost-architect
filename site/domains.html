@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Domain Overlays — AI Cost Architect</title>
+  <meta name="description" content="Eight industry-specific overlays that adapt the 21 artifacts.">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="content">
+      <span class="eyebrow">Reference</span>
+      <h1>Domain Overlays</h1>
+      <p class="lede">Every artifact ships with eight domain overlays. The overlay tells you what changes for that industry — added risk categories, required signatories, new cost lines, or explicit boundaries — without rewriting the artifact.</p>
+
+      <h2>The eight overlays</h2>
+      <table class="artifacts-table">
+        <thead><tr><th>Domain</th><th>What the overlay adds</th></tr></thead>
+        <tbody>
+        <tr>
+          <td><strong>Generic</strong><br><span class="text-small text-muted">Baseline enterprise use, no additional regulatory overlay.</span></td>
+          <td>Standard 21-artifact pack.</td>
+        </tr>
+        <tr>
+          <td><strong>Banking &amp; FSI</strong><br><span class="text-small text-muted">SR 11-7, GLBA, model-risk management.</span></td>
+          <td>Independent second-line validation, MRM tiering explicit, data-use committee signoff.</td>
+        </tr>
+        <tr>
+          <td><strong>Retail &amp; E-commerce</strong><br><span class="text-small text-muted">Peak-season variability, thin-margin, high-volume.</span></td>
+          <td>Peak-season overlay row in the forecast; higher variance tolerance in pilot.</td>
+        </tr>
+        <tr>
+          <td><strong>Energy / Oil &amp; Gas</strong><br><span class="text-small text-muted">Remote sites, egress costs, HSE stakes.</span></td>
+          <td>Remote-site egress line; HSE risk category in the risk register.</td>
+        </tr>
+        <tr>
+          <td><strong>Aerospace &amp; Defense</strong><br><span class="text-small text-muted">ITAR/EAR, configuration management, safety.</span></td>
+          <td>Config-management overhead line; export-control review in risk register.</td>
+        </tr>
+        <tr>
+          <td><strong>Public Sector</strong><br><span class="text-small text-muted">FedRAMP boundary, ATO maintenance, FISMA scope.</span></td>
+          <td>ATO-maintenance and audit-support lines; explicit FedRAMP boundary in pricing table.</td>
+        </tr>
+        <tr>
+          <td><strong>Telecommunications</strong><br><span class="text-small text-muted">Multi-region duplication, carrier-grade uptime.</span></td>
+          <td>Multi-region infrastructure duplication line; higher SLA targets.</td>
+        </tr>
+        <tr>
+          <td><strong>Media &amp; Entertainment</strong><br><span class="text-small text-muted">Rights verification, content moderation.</span></td>
+          <td>Rights-verification cost line; content-moderation gates in evaluation.</td>
+        </tr>
+        </tbody>
+      </table>
+
+      <h2>How to use an overlay</h2>
+      <ol>
+        <li>Complete the base artifact using the DOCX template as if the engagement were generic.</li>
+        <li>Open the overlay section at the bottom of that artifact.</li>
+        <li>Add the overlay-specific rows to the pricing table, risk register, or decision log as instructed.</li>
+        <li>Have the domain-specific signatory review before freezing the artifact.</li>
+      </ol>
+
+      <h2>Adding a new domain</h2>
+      <p>To add a domain (e.g. healthcare/HIPAA), add a new entry to <code>window.ACA.domains</code> in <a href="https://github.com/zestor/ai-cost-architect/blob/main/site/assets/data.js"><code>site/assets/data.js</code></a> with a <code>key</code>, <code>name</code>, <code>tagline</code>, and <code>add</code> description. Then add a domain-specific section to each artifact template where the overlay materially changes the answer.</p>
+
+    </main>
+  </div>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

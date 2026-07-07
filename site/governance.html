@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Governance Cadence — AI Cost Architect</title>
+  <meta name="description" content="Daily, weekly, monthly, quarterly, and annual rhythms.">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="content">
+      <span class="eyebrow">Reference</span>
+      <h1>Governance Cadence</h1>
+      <p class="lede">Once the operating model (<a href="artifacts/operating-model.html">Artifact 17</a>) is live, cost management runs on a fixed cadence. Each rhythm has a named owner, a fixed artifact, and a specific outcome.</p>
+
+      <table class="artifacts-table">
+        <thead><tr><th>Cadence</th><th>Owner</th><th>Focus</th><th>Artifact</th></tr></thead>
+        <tbody>
+        <tr><td><strong>Daily</strong></td><td>Platform on-call</td><td>Cost-anomaly dashboard review; run Artifact 21 if &gt; 20% deviation</td><td><a href="artifacts/anomaly-playbook.html">→</a></td></tr>
+        <tr><td><strong>Weekly</strong></td><td>Product + Finance</td><td>Unit-economics review; adoption trends; guardrail-trigger and reject rates</td><td><a href="artifacts/unit-economics.html">→</a></td></tr>
+        <tr><td><strong>Monthly</strong></td><td>Finance (lead) + Product + Technical</td><td>Close, reconcile Artifact 8 vs. invoice, publish variance memo</td><td><a href="artifacts/cost-forecast.html">→</a></td></tr>
+        <tr><td><strong>Quarterly</strong></td><td>LOB leadership + cost management triad</td><td>Portfolio review; refresh optimization catalog; renegotiation checkpoints</td><td><a href="artifacts/optimization-catalog.html">→</a></td></tr>
+        <tr><td><strong>Annual</strong></td><td>Executive committee</td><td>Framework refresh; assumption re-baseline; portfolio prioritization</td><td><a href="artifacts/roi-npv.html">→</a></td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why cadence matters more than tools</h2>
+      <p>The most common failure mode in enterprise AI cost management is not missing dashboards or missing data. It is missing rhythm — decisions that should be monthly happen quarterly, quarterly reviews slide to annual, and by year-end the forecast is a fantasy. The cadence above is the smallest set of recurring meetings that keeps the framework alive without the consultant present.</p>
+
+      <h2>What to bring to each meeting</h2>
+      <ul>
+        <li><strong>Daily</strong> — the anomaly dashboard, previous 24-hour deltas, any triggered playbook.</li>
+        <li><strong>Weekly</strong> — cost-per-outcome trend, top 3 requests by volume, top 3 by cost.</li>
+        <li><strong>Monthly</strong> — Artifact 8 vs. invoice reconciliation, variance memo, updated forecast.</li>
+        <li><strong>Quarterly</strong> — refreshed Artifact 10 (optimization catalog), vendor renewals list.</li>
+        <li><strong>Annual</strong> — Artifact 3 (pricing) refresh, Artifact 12 (ROI) recompute, Artifact 17 (operating model) audit.</li>
+      </ul>
+
+    </main>
+  </div>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

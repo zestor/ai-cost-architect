@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Failure Modes — AI Cost Architect</title>
+  <meta name="description" content="Ten common failure modes and how the framework prevents each.">
+  <link rel="preconnect" href="https://rsms.me">
+  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <button id="menu-toggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
+  <div class="layout">
+    <aside id="sidebar" class="sidebar"></aside>
+    <main class="content">
+      <span class="eyebrow">Reference</span>
+      <h1>Failure Modes</h1>
+      <p class="lede">The ten most common ways enterprise AI cost management engagements fail — and how the 21-artifact pack forces the discipline that prevents each one.</p>
+
+      <div class="failures">
+
+        <div class="failure">
+          <div class="failure-num">1</div>
+          <div class="failure-body">
+            <h3>Skipping intake</h3>
+            <p>Every &#x27;yes&#x27; commits weeks of work. Portfolio Intake (Phase 0) is the tier decision that determines how much of the pack applies. Skipping it means every project gets the T1 treatment — including ones that should have been T3 or declined outright.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/intake.html">Phase 0 · Portfolio Intake</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">2</div>
+          <div class="failure-body">
+            <h3>Pricing before drivers</h3>
+            <p>Writing prices into Artifact 3 before Artifact 2 (workload decomposition) is complete. You end up with prices for the wrong things, and the model has no defensible unit basis.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/decomposition.html">Phase 2 · Decomposition &amp; Boundary</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">3</div>
+          <div class="failure-body">
+            <h3>Instrumentation as an afterthought</h3>
+            <p>Building the forecast first, then designing metering to match. The result: forecast components you cannot measure and measured signals you cannot reconcile. Artifact 5 must be co-designed with Artifact 4.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/instrumentation.html">Phase 3 · Instrumentation &amp; Measurement</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">4</div>
+          <div class="failure-body">
+            <h3>Reconciliation not enforced</h3>
+            <p>Skipping the ±10% reconciliation gate at end of Phase 3. Every executive review after that point is on unaudited numbers, and any surprise invoice destroys the credibility of the model.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/instrumentation.html">Phase 3 · Instrumentation &amp; Measurement</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">5</div>
+          <div class="failure-body">
+            <h3>Cost per outcome missing</h3>
+            <p>Reporting cost per request instead of cost per successful outcome. Retry rates, escalations, and rejects all inflate the true unit cost — sometimes 2–3x. If you cannot state cost per outcome in one sentence, Phase 4 is not done.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/modeling.html">Phase 4 · Modeling</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">6</div>
+          <div class="failure-body">
+            <h3>Optimization without ownership</h3>
+            <p>Artifact 10 (optimization catalog) with unowned rows is a wishlist, not a plan. Every quantified lever must have a named owner and a deadline before the exec committee sees the business case.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/optimization.html">Phase 5 · Optimization &amp; Benefits</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">7</div>
+          <div class="failure-body">
+            <h3>Benefits that were going to happen anyway</h3>
+            <p>Counting benefits that would have happened without the AI investment. Artifact 11 exists precisely to keep the business case honest — attributable-only benefits with a signed baseline.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/optimization.html">Phase 5 · Optimization &amp; Benefits</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">8</div>
+          <div class="failure-body">
+            <h3>Business case as narrative, not decision</h3>
+            <p>A 40-page narrative with no clear decision requested. Artifact 13 (Exec One-Pager) forces you to distill the ask. If it does not fit on one page, the committee will not read it.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/business_case.html">Phase 6 · Business Case &amp; Governance</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">9</div>
+          <div class="failure-body">
+            <h3>Consultant leaves before operating model</h3>
+            <p>Ending the engagement at business-case approval instead of at first successful monthly close. Without Artifact 17 (Operating Model) actually running, the framework dies within a quarter.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/operate.html">Phase 7 · Operate &amp; Steady State</a></p>
+          </div>
+        </div>
+        <div class="failure">
+          <div class="failure-num">10</div>
+          <div class="failure-body">
+            <h3>Anomaly playbook never rehearsed</h3>
+            <p>Writing Artifact 21 and never running a simulation. The first real anomaly then finds it — and the response is slower and more expensive than it should be. Rehearse a simulated 30-percent cost spike before the consultant departs.</p>
+            <p class="text-small text-muted">Prevented in <a href="phases/operate.html">Phase 7 · Operate &amp; Steady State</a></p>
+          </div>
+        </div>
+      </div>
+
+      <h2>Using this list</h2>
+      <p>Review these ten modes at the end of every phase gate. If you cannot demonstrate that the current engagement is not exhibiting the ones relevant to your phase, do not proceed — fix the discipline first. This is the single highest-leverage practice in the framework.</p>
+
+    </main>
+  </div>
+  <script src="assets/data.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>
